@@ -24,7 +24,10 @@ const contact=[
 
 const [contacts,setContact]=useState([]);
 
+const addContacthandler=(contact)=>{
 
+  console.log(contact)
+}
 
   return (
     
@@ -35,7 +38,7 @@ const [contacts,setContact]=useState([]);
       
 <Header/>
 
-<AddContact/>
+<AddContact addContactHandler={addContacthandler}/>
 
 
 <Contactlist Contact={contact}/>
