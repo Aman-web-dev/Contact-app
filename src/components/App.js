@@ -11,6 +11,16 @@ import Contactlist from './Contactlist';
 
 const App =()=> {
 
+const contact=[
+
+
+  {
+    id:1,
+    "name":'Aman',
+    "email":'amanzhx1234@gmail.com'
+  }
+]
+
 
 const [contacts,setContact]=useState([]);
 
@@ -28,7 +38,7 @@ const [contacts,setContact]=useState([]);
 <AddContact/>
 
 
-{/* <Contactlist Contact={}/> */}
+<Contactlist Contact={contact}/>
 
 
        </div>
